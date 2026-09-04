@@ -19,6 +19,66 @@ Managers should have access to change menu and update inventory.
 ## Diagram
 
 ```mermaid
+classDiagram
+
+class Menu{
+    +listOfSoldItems
+}
+
+class Inventory{
+    +ItemName
+    +ItemPrice
+
+    -ProductID
+}
+
+class CoffeeShop{
+    +Display()
+}
+
+class Customer{
+    +CustomerID
+    +FirstName
+    +LastName
+}
+
+class Employees {
+    +EmployeeID
+    +FirstName
+    +LastName
+}
+
+class Managers {
+    +ManagerID
+    +FirstName
+    +LastName
+}
+
+class Order {
+    +CustomerID
+    +OrderID
+    +TotalCost
+    +Date
+    +Status
+}
+
+class OrderLine {
+    +OrderID
+    +EmployeeID
+    +ProductID
+    +Status
+}
+
+CoffeeShop "1" -- "1" Menu : has
+CoffeeShop "1" -- "M" Managers : has
+Managers --> Employees : manages
+Managers --> Inventory : views and manages
+Employees --> OrderLine : takes order to fulfill
+Menu "1" -- "M" Inventory : displays
+Customer "1" --> "M" Order : orders
+Customer "1" --> "1" Menu : views
+Order -- OrderLine : appends into
+OrderLine -- Inventory : checks stock
 
 ``` 
 

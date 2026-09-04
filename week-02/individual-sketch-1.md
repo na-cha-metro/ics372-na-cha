@@ -18,8 +18,6 @@ Managers should have access to change menu and update inventory.
 
 ## Diagram
 
-*Mermaid didn't compile*
-
 ```mermaid
 
 ``` 

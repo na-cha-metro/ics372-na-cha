@@ -6,8 +6,6 @@
 
 ## My Answer
 
-*Respond directly to the prompt. Write in plain sentences — no need to be formal. You have 12 minutes total, so think first, then write.*
-
 **Functional:** 
 Customer can see menu inventory and cost (2.1). 
 Customer can build an order by adding items as well as choose options for size, and extras like milk and syrup (2.2). 

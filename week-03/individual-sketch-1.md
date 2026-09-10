@@ -45,10 +45,10 @@ No payment system adjustments (5.1).
 The system should run on a computer at the counter, a tablet used by baristas, and the owner's laptop in the back office (1.1).
 Staff scheduling (5.2).
 
-**What I cannot build**
+**What I cannot build:**
 The notification for low stock or none, because when should the manager be notified? At ~10 coffee from ingredients? Or ~10 latte from ingredients?
 
-**My Question to the Owner**
+**My Question to the Owner:**
 I need the most clarification on what the manager really needs. While customers and Baristas were neatly detailed, Managers should have more responsibility that is required. As well as detail about when to notify the managers, the end-of-day sales report (does it need an estimate profit?), and can a manager adjust the menu at any time, any day, with no other checks or approval.
 
 ## What I'm Not Sure About

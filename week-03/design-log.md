@@ -1,4 +1,4 @@
-# Design Log — Week 2
+# Design Log — Week 3
 ### ICS 372 | Fall
 **Student:** Na Cha 
 **Group:** 4  

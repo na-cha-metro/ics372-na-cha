@@ -43,7 +43,7 @@ Working alone, on yours:
 
 Step 1: If a customer is not a loyalty member: discount is not applied and the process of checking out continues.
 
-Step 2: If the customer changes their mind on the order note after placing the order: they must notify the barista otherwise the note is followed when making the order.
+Step 1: If the customer changes their mind on the order note after placing the order: they must notify the barista otherwise the note is followed when making the order.
 
 ---
 

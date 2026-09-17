@@ -6,8 +6,6 @@
 
 ## 1. Tonight's Prompt
 
-[Paste the prompt here, then write your answer under each numbered step.]
-
 Take one of these two, split across your group:
 
 Customer Places Order
@@ -43,9 +41,9 @@ Working alone, on yours:
 
 3. Turn two of those assumptions into alternative flows. Keyed to the step where they branch, with what happens instead and where it rejoins — or that it ends the use case.
 
-If a customer is not a loyalty member: discount is not applied and the process of checking out continues.
+Step 1: If a customer is not a loyalty member: discount is not applied and the process of checking out continues.
 
-If the customer changes their mind on the order note after placing the order: they must notify the customer otherwise the note is followed when making hte order.
+Step 2: If the customer changes their mind on the order note after placing the order: they must notify the barista otherwise the note is followed when making the order.
 
 ---
 

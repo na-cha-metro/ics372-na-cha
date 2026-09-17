@@ -29,7 +29,7 @@ Working alone, on yours:
 **Precondition:** In order for the customer to be able to place an order, the customer must have items in their cart, like type of coffee or latte before placing the order.
 
 **Main Flow:**
-    (1) The customer (actor 1), checkouts their order at the system.
+    (1) The customer (actor 1), checkouts their order at the system along with any notes regarding the order.
     (2) The customer (actor 1) pays at checkout and the system also checks if they are a loyalty member and applies discounts when necessary.
     (3) A prompt from the system/barista screen that the customer's order has been successfully made. Along with an order #/id or similar so the customer can pick it up when it is done.
     (4) The order is made and the system updates the inventory.
@@ -63,7 +63,9 @@ If the customer changes their mind on the order note after placing the order: th
 
 *This is about your own thinking, and it is required every week. It is not the same thing as a question written for a stakeholder. When the prompt asks you for one of those, it belongs up in section 1 with the step that asked for it, and it does not replace this section.*
 
-I am not sure about how the system should exactly check a customer's loyalty membership. There could be conditions like total orders history that is counted or it could be a tracking system like email.
+Step 1: I am not sure about how the system should exactly check a customer's loyalty membership. There could be conditions like total orders history that is counted or it could be a tracking system like email.
+
+Step 1: The customer's changed notes should be notified immediately to the barista else the original note is taken for the order.
 
 ---
 

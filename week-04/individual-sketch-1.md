@@ -25,6 +25,14 @@ Working alone, on yours:
     (4) The order is made and the system updates the inventory.
     (5) The order is done and the customer (actor 1) is called to pick up their order.
 
+| Actor | System |
+| ----  | ------ |
+| Customer checkouts order with notes | System recieves order and notes |
+| customer pays for order | system process payment and adds any loyalty discounts if applicable |
+| order is confirmed | order is shown to customer alongside order number and id |
+| order is made | system updates inventory after order is made |
+| customer comes picks up order after being notified | notify customer id for their order id |
+
 **Postcondition:** Customer picks up order and order has been fulfilled so the (postcondition) end state is met.
 
 2. Then go back through it and annotate every step with what it assumes. One phrase per step in the margin. Step 2 assumes the item is available. Step 5 assumes the order can still be changed. Do this for every step, even the ones that seem to assume nothing.

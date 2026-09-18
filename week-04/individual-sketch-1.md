@@ -27,11 +27,16 @@ Working alone, on yours:
 
 | Actor | System |
 | ----  | ------ |
-| Customer checkouts order with notes | System recieves order and notes |
-| customer pays for order | system process payment and adds any loyalty discounts if applicable |
-| order is confirmed | order is shown to customer alongside order number and id |
-| order is made | system updates inventory after order is made |
-| customer comes picks up order after being notified | notify customer id for their order id |
+| (1) Customer checkouts order with notes |  |
+| | (2) System recieves order and notes |
+| (3) customer pays for order |  |
+| | (4) system process payment and adds any loyalty discounts if applicable |
+| (5) order is confirmed |  |
+| | (6) order is shown to customer alongside order number and id |
+| (7) order is made |  |
+| | (8) system updates inventory after order is made |
+| (9) customer comes picks up order after being notified | |
+| | (10) notify customer id for their order id |
 
 **Postcondition:** Customer picks up order and order has been fulfilled so the (postcondition) end state is met.
 
@@ -49,9 +54,22 @@ Working alone, on yours:
 
 3. Turn two of those assumptions into alternative flows. Keyed to the step where they branch, with what happens instead and where it rejoins — or that it ends the use case.
 
-Step 1: If a customer is not a loyalty member: discount is not applied and the process of checking out continues.
+Alternative at Step 1: If the customer changes their mind on the order note after placing the order: they must notify the barista otherwise the note is followed when making the order.
 
-Step 1: If the customer changes their mind on the order note after placing the order: they must notify the barista otherwise the note is followed when making the order.
+| Actor | System |
+| ----  | ------ |
+| (1) Customer checkouts order with notes |  |
+| (1a) Customer changes mind about order notes/customization |  |
+| | if not alerted to barista immediately, order proceeds with current notes/customization |
+| | if alerted, cancel order and restart at step 1 |
+
+Alternative at Step 3: If a customer is not a loyalty member: discount is not applied and the process of checking out continues.
+
+| Actor | System |
+| --- | --- |
+| (3a) customer pays for order | |
+| | customer is not a loyalty member |
+| | discount not applied, order proceeds to checkout |
 
 ---
 

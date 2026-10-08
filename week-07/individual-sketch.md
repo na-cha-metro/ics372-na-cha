@@ -14,34 +14,6 @@ Check every box before you commit. **10 points.**
 
 ---
 
-### UC-1: Place an Order
-
-**Actor:** Customer
-
-**Precondition:** The customer has built an order with at least one item, and has chosen a size and customizations for every item.
-
-**Postcondition:** The order is in the barista queue with a confirmation number, and every item on it carries the price it was placed at.
-
-| Actor Action | System Response |
-|---|---|
-| **1.** Customer asks to place the order. | |
-| | **2.** System confirms that every item on the order can be sold right now. |
-| | **3.** System works out the price of each item as configured, and records that price on the order. |
-| | **4.** If the customer is a loyalty member, system applies the loyalty discount. |
-| | **5.** System records the order's total. |
-| | **6.** System gives the order a confirmation number. |
-| | **7.** System adds the order to the end of the barista queue. |
-| | **8.** System shows the customer the confirmation number and the total. |
-
-**Alternative flow 2a: An item can no longer be sold.**
-
-| Actor Action | System Response |
-|---|---|
-| | **2a1.** System tells the customer which item can no longer be sold. |
-| **2a2.** Customer removes that item or changes it to one that can be sold. | |
-
-*Rejoins the main flow at step 1.*
-
 ## 1. Tonight's Prompt
 
 **Step 1: The sequence diagram.** One Mermaid `sequenceDiagram` for the **main flow** of your use case. Leave the alternative flows out. Every arrow follows these rules:

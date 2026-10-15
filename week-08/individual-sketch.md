@@ -65,9 +65,6 @@ Exactly these four columns:
 **Step 2: The constructors.** For every class that appears anywhere in your step 1 table, in either column, write its Java constructor. Signature only, one line each, in one code block:
 
 ```java
-public Hold(Member member, Book book, LocalDate placedOn)
-public Catalog()
-
 public Customer()
 public CoffeeShopSystemInput()
 public CoffeeShopSystemLogic()

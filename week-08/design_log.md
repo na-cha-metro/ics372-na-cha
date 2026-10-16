@@ -39,6 +39,6 @@ I am uncertain about if we should create a new class, say, CoffeeShopSystem, to 
 
 ---
 
-## Word Count: 259 words
+## Word Count: 262 words
 
 ---

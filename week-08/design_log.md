@@ -17,7 +17,7 @@ As well, as making sure the code complies in order to satisfy use-case 1.
 
 ## Part 2 — Your Design Decision
 
-My group has not fully settled on how we should instaniate it. According to the code should get the menu, we need it to be from inventory which contains Items for the Order. But one thing is for sure, is that we need to refactor/redesign. 
+My group has not fully settled on how we should instaniate it. According to the code should get the menu, we need it to be from an inventory which should perhaps contain Items for the Order. But one thing is for sure, is that we need to refactor/redesign. 
 
 ---
 

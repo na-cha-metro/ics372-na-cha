@@ -6,30 +6,6 @@
 
 ## 1. Tonight's Prompt
 
-## Checklist
-
-Check every box before you commit. **10 points.**
-
-- [ ] Step 1 has the whole body of your method in Java, with every call it makes **(3 pts)**
-- [ ] Step 2 has a row for every collection your method walks that another class owns, with exactly one of the five values under **What it gets** **(3 pts)**
-- [ ] Every row of step 2 says `yes` or `no` under **Could it change it?** **(2 pts)**
-- [ ] Section 2 of the template says what you're least sure of **(2 pts)**
-- [ ] Committed to `week-10/individual-sketch.md` **(required: nothing is graded without it)**
-
----
-
-Week 8 decided how a class gets hold of another object. Tonight a class needs to look at **everything another object is holding**: every order in a queue, every line on an order. The question is **what it gets from the owner** to do that.
-
-**Which use case is yours.** Sort your group by first name, A to Z. The first and third people take UC-2. The second and fourth take UC-3. In a group of three, the first and third take UC-2 and the second takes UC-3.
-
-Open `week-10-use-cases.md` and your group's sequence diagram for your use case in `docs/design/use-cases.md`. If your group has no diagram for it, work from the use case text.
-
-**About the example.** It uses the library system from the textbook, not Brew & Byte. It shows you the *shape* of what to write and nothing else.
-
-Copy steps 1 and 2 into **section 1 of your sketch file** and put your work directly under each step.
-
----
-
 **Step 1: The method.** Write the whole body of one method, in Java, in one code block:
 
 - **UC-2:** the method that uses up the ingredients for every item on the order, including the ingredients its customizations add (step 5).

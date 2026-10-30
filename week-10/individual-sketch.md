@@ -80,7 +80,7 @@ Exactly these four columns:
 
 ## 2. What I'm Not Sure About
 
-Due to the group's codebase, I wasn't quite sure which classes did what. Over past few weeks there was a lot of decisions that made some classes redudant or broken into facade-type classes. Not to mention the refactoring was an issue.
+The walk-table was slightly confusing as well, so I'm not sure if I filled it out correctly. Due to the group's codebase, I wasn't quite sure which classes did what. Over past few weeks there was a lot of decisions that made some classes redudant or broken into facade-type classes. Not to mention the refactoring was an issue.
 
 ---
 

@@ -45,6 +45,8 @@ The example row is from the textbook's library system, not the case. It shows on
 | `OrderDesk.java` | a method to show queue to barista at the desk screen  | because orders has to be on the barista's screen right away according to `requirement 1.4`, granted this method could also be in `OrderQueue.java` |
 | `OrderDesk.java` | a method to remove and update the current displayed order for the barista screen after it is marked complete | because `requirement 3.3` says an order has to leave the barista screen or tablet when it is marked complete |
 
+`Total: 2 files`
+
 **Step 2: Your fix.** Change `OrderDesk`, and anything else in the case you need to, so that after your change, adding the barista's screen, or any screen after it, changes no file you already have except `ShopSetup`.
 
 Write the changed `OrderDesk` whole, in Java, in one code block. Put any other class you added or changed in the same block, under it. Any approach you can make work is fine. If you're not sure your idea compiles, write it anyway and put a comment on the line you're unsure of.

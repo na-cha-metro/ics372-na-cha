@@ -49,12 +49,71 @@ The example row is from the textbook's library system, not the case. It shows on
 
 Write the changed `OrderDesk` whole, in Java, in one code block. Put any other class you added or changed in the same block, under it. Any approach you can make work is fine. If you're not sure your idea compiles, write it anyway and put a comment on the line you're unsure of.
 
+```
+package edu.metrostate.oodi.brewandbyte.model;
+
+import edu.metrostate.oodi.brewandbyte.view.ManagerWarnings;
+import edu.metrostate.oodi.brewandbyte.view.PickupBoard;
+import java.time.LocalDateTime;
+
+public class OrderDesk {
+    private final OrderQueue queue;
+    private final Inventory inventory;
+    private final SalesLedger ledger;
+    private final ManagerWarnings warnings;
+    private final PickupBoard pickup;
+
+    private Order currentOrder;
+
+    public OrderDesk(OrderQueue queue, Inventory inventory, SalesLedger ledger,
+                     ManagerWarnings warnings, PickupBoard pickup) {
+        this.queue = queue;
+        this.inventory = inventory;
+        this.ledger = ledger;
+        this.warnings = warnings;
+        this.pickup = pickup;
+    }
+
+    public void place(Order order) {
+        queue.add(order);
+        this.currentOrder = order;
+    }
+
+    public void completeNext(LocalDateTime now) {
+        Order order = queue.next();
+        order.markComplete(now);
+        for (Ingredient low : inventory.useUp(order)) {
+            warnings.lowStock(low);
+        }
+        queue.remove(order);
+        ledger.record(order);
+        pickup.call(order.getConfirmationNumber());
+
+        // sets to null if no order left
+        // to fulfill req. 3.3
+        // like in displayCurrentOrder()
+        // barista view class should call it to update view
+        // after marked as complete
+        if (queue.next() == null) {
+            this.currentOrder = null;
+        }
+    }
+
+    public Order displayCurrentOrder() {
+        // something like this for req 1.3 barista being 
+        // shown the immediate order
+        // when it is placed, barista view class should technically call this
+        return currentOrder;
+    }
+}
+```
+
 
 ---
 
 ## 2. What I'm Not Sure About
 
-placeholder
+Not sure if it will work as expected. The idea was that the barista view class can call `completeNext()` which had an addition to set current order to null if there is no order for requirement 3.3, an order leaves the tablet after it is complete. And after doing so, it calls `displayCurrentOrder()`, which returns the current order. While I did not add the barista screen view, I assume it has a behavioural mehtod to update the current displayed order. I could've named the function to `getCurrentOrder()` as well I suppose for my additions to`OrderDesk.java`.
 
 ---
 

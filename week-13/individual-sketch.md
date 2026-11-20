@@ -54,6 +54,8 @@ The example row is from the textbook's library system, not the case. It shows on
 | `menu.find(name) != null` | There is already an item with the same name on the menu. |
 | `ingredient == null` | Does not stock said ingredient. |
 
+`Total: 3 copied`
+
 **Step 2: Your fix.** Change the case so that `BaristaController` can add a menu item **without copying any `if` from `ManagerController`**, and so that **a test could check each of those rules without building a controller or a screen.**
 
 Write `BaristaController` whole, in Java, in one code block, with its `onAddItem` method. Put every other class you added or changed in the same block, under it. Any approach you can make work is fine. If you're not sure your idea compiles, write it anyway and put a comment on the line you're unsure of.
